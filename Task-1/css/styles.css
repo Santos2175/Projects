@@ -1,6 +1,6 @@
 /* variables */
 :root {
-  --color-hero: #c2c8da;
+  --color-hero: #f4f6f5;
   --color-text: #ffffff;
   --color-black: #000000;
   --color-primary: #e6c744;
@@ -31,19 +31,7 @@ body {
 h1,
 h2,
 h3 {
-  color: var(--color-black);
-}
-
-h1 {
-  font-size: 9.6rem;
-}
-
-h2 {
-  font-size: 4rem;
-}
-
-h3 {
-  font-size: 3.2rem;
+  margin: 0;
 }
 
 /* Links */
@@ -65,8 +53,6 @@ a {
 
 /* navbar */
 .navbar {
-  position: sticky;
-  top: 0;
   padding: 2rem 5rem;
   z-index: 1000;
 }
@@ -98,4 +84,58 @@ a {
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 3.3rem;
+}
+
+/* hero section */
+.hero {
+  padding: 2rem 5rem;
+  margin: 0 auto;
+}
+
+.hero__container {
+  display: flex;
+
+  justify-content: space-between;
+
+  background-color: var(--color-hero);
+  border-radius: 5.9rem;
+}
+
+.hero__content {
+  padding: 6rem 6rem;
+}
+
+.hero__title {
+  font-size: 8rem;
+  line-height: 10rem;
+}
+.hero__title--style1 {
+  background-color: #ffffff;
+  display: inline-block;
+  width: 370px;
+  padding: 0.8rem 2rem;
+  transform: rotate(-2deg);
+}
+
+.hero__title--style2 {
+  background-color: var(--color-primary);
+  display: inline-block;
+  width: 370px;
+  padding: 0.8rem 2rem;
+  transform: rotate(-2deg);
+}
+
+.hero__subtitle {
+  padding: 2rem 0;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.hero__image {
+  flex: 1;
+}
+
+.hero__image img {
+  height: 650px;
+  width: 800px;
 }
