@@ -6,6 +6,18 @@
   --color-primary: #e6c744;
 }
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
 /* Typography */
 
 html {
@@ -32,4 +44,58 @@ h2 {
 
 h3 {
   font-size: 3.2rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #242323;
+}
+
+/* button */
+.btn {
+  background-color: var(--color-black);
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--color-text);
+  text-transform: uppercase;
+  padding: 0.7rem 1.7rem;
+  border-radius: 0.7rem;
+}
+
+/* navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  padding: 2rem 5rem;
+  z-index: 1000;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+.navbar__logo img {
+  width: 192px;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 4rem;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.navbar__item {
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 3.3rem;
 }
