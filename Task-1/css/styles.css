@@ -139,3 +139,21 @@ a {
   height: 650px;
   width: 800px;
 }
+
+/* brand section */
+.brand {
+  margin: 2rem 0;
+  padding: 3rem 5rem;
+
+  background-color: var(--color-primary);
+}
+
+.brand__logos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.brand__logo {
+  height: 35px;
+}
