@@ -1,0 +1,35 @@
+/* variables */
+:root {
+  --color-hero: #c2c8da;
+  --color-text: #ffffff;
+  --color-black: #000000;
+  --color-primary: #e6c744;
+}
+
+/* Typography */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', serif;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-black);
+}
+
+h1 {
+  font-size: 9.6rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
