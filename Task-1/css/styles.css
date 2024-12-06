@@ -100,9 +100,6 @@ a {
 
 .hero__container {
   display: flex;
-
-  justify-content: space-between;
-
   background-color: var(--color-hero);
   border-radius: 5.9rem;
 }
@@ -118,16 +115,16 @@ a {
 .hero__title--style1 {
   background-color: #ffffff;
   display: inline-block;
-  width: 370px;
-  padding: 0.8rem 2rem;
+  width: 80%;
+  padding: 0.8rem 0;
   transform: rotate(-2deg);
 }
 
 .hero__title--style2 {
   background-color: var(--color-primary);
   display: inline-block;
-  width: 370px;
-  padding: 0.8rem 2rem;
+  width: 80%;
+  padding: 0.8rem 0.2rem;
   transform: rotate(-2deg);
 }
 
@@ -138,12 +135,30 @@ a {
 }
 
 .hero__image {
-  flex: 1;
+  width: 700px;
+  height: auto;
+  object-fit: contain;
 }
 
-.hero__image img {
-  height: 650px;
-  width: 800px;
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+  }
+
+  .hero__btn {
+    font-size: 1.5rem;
+  }
+
+  .hero__image {
+    width: 380px;
+    height: auto;
+  }
 }
 
 /* brand section */
@@ -162,6 +177,12 @@ a {
 
 .brand__logo {
   height: 35px;
+}
+
+@media (max-width: 768px) {
+  .brand__logos {
+    overflow-x: scroll;
+  }
 }
 
 /* catalogue Section */
