@@ -327,6 +327,39 @@ a {
   width: 180px;
 }
 
+@media (max-width: 376px) {
+  .app__design {
+    display: none;
+  }
+
+  .app__download {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .download__title {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .download__offer {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.4rem;
+    margin: 0;
+  }
+
+  .app__links {
+    width: 260px;
+    gap: 16px;
+  }
+
+  .app__links img {
+    width: 12.2rem;
+  }
+}
+
 /* promo section */
 .promo {
   height: 450px;
@@ -388,7 +421,7 @@ a {
   height: 4.8rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 375px) {
   .promo__input {
     width: 100%;
     padding: 1rem 2rem;
@@ -475,7 +508,7 @@ a {
   align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 375px) {
   .footer {
     grid-template-columns: 1fr;
     gap: 4rem;
