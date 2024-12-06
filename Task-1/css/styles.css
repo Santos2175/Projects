@@ -334,6 +334,7 @@ a {
 
 .promo h1 {
   text-align: center;
+  line-height: 4.5rem;
   font-size: 3.8rem;
   max-width: 680px;
   letter-spacing: 0.2rem;
@@ -344,6 +345,7 @@ a {
   text-align: center;
   margin: 1.5rem 0;
   font-size: 2.2rem;
+  font-weight: 100;
   color: #fffcf8;
 }
 
