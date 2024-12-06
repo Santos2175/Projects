@@ -388,6 +388,26 @@ a {
   height: 4.8rem;
 }
 
+@media (max-width: 768px) {
+  .promo__input {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  .promo h1 {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+
+  .promo p {
+    font-size: 1.6rem;
+  }
+
+  .promo__input input::placeholder {
+    font-size: 1.6rem;
+  }
+}
+
 /* Footer Section */
 .footer {
   display: grid;
@@ -462,6 +482,7 @@ a {
   }
 
   .footer__section p {
+    font-size: 1.4rem;
     max-width: 100%;
   }
 
@@ -471,6 +492,6 @@ a {
 
   .footer__heading,
   .footer__links a {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 }
