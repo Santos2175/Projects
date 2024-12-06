@@ -430,23 +430,18 @@ a {
 
 .icons {
   display: flex;
-  max-width: 210px;
-  gap: 10px;
+  max-width: 250px;
+  gap: 1.4rem;
 }
 
 .icon__border {
-  width: 40px;
-  height: 40px;
+  width: 5.2rem;
+  height: 5.2rem;
   background-color: var(--color-primary);
   border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.icon__border img {
-  height: 15px;
-  width: 15px;
 }
 
 @media (max-width: 768px) {
