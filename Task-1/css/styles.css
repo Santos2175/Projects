@@ -51,6 +51,11 @@ a {
   border-radius: 0.7rem;
 }
 
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 /* navbar */
 .navbar {
   padding: 2rem 5rem;
