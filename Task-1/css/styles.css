@@ -405,9 +405,11 @@ a {
 }
 
 .footer__section p {
-  font-size: 1.3rem;
-  max-width: 250px;
+  font-size: 1.5rem;
   line-height: 2rem;
+  max-width: 300px;
+  line-height: 2.2rem;
+  margin: 1rem 0;
   color: #8e8e8e;
 }
 
