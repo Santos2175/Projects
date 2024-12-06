@@ -43,7 +43,7 @@ a {
 /* button */
 .btn {
   background-color: var(--color-black);
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   font-weight: 500;
   color: var(--color-text);
   text-transform: uppercase;
@@ -81,9 +81,10 @@ a {
 }
 
 .navbar__item {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   font-weight: 400;
   line-height: 3.3rem;
+  color: #242323;
 }
 
 /* hero section */
@@ -347,6 +348,39 @@ a {
   font-size: 2.2rem;
   font-weight: 100;
   color: #fffcf8;
+}
+
+.promo__input {
+  background-color: #ffffff;
+  display: flex;
+  padding: 1rem;
+  max-height: 8.7rem;
+  max-width: 57.4rem;
+  width: 42rem;
+  border-radius: 0.8rem;
+}
+
+.promo__input input {
+  flex: 1;
+  padding: 0.3rem 0.9rem;
+  margin-right: 3rem;
+  border: none;
+}
+
+.promo__input input::placeholder {
+  font-size: 2rem;
+  color: #767676;
+}
+
+.promo__input input:focus {
+  outline: none;
+}
+
+.promo__input--modified-btn {
+  max-width: 16.7rem;
+  max-height: 6.7rem;
+  width: 10rem;
+  height: 4.8rem;
 }
 
 /* Footer Section */
