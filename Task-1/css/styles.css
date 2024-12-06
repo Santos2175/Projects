@@ -324,14 +324,36 @@ a {
 }
 
 .favourite__description {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 .favourite__description img {
+  width: 18px;
   height: 18px;
-  position: absolute;
-  right: 0;
-  top: 2.2rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .favourite__products {
+    gap: 2rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
+
+  .favourite__title {
+    font-size: 2.1rem;
+    margin-bottom: 4rem;
+  }
+
+  .favourite__product img {
+    height: 355px;
+  }
+
+  .favourite__description img {
+    height: 18px;
+    width: 18px;
+  }
 }
 
 /* App description */
@@ -557,6 +579,27 @@ a {
 }
 
 @media (max-width: 375px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .footer__section p {
+    font-size: 1.4rem;
+    max-width: 100%;
+  }
+
+  .footer__links {
+    gap: 1.1rem;
+  }
+
+  .footer__heading,
+  .footer__links a {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
   .footer {
     grid-template-columns: 1fr;
     gap: 4rem;
