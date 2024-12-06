@@ -177,7 +177,7 @@ a {
 
 .catalogue__products {
   display: flex;
-  gap: 60px;
+  justify-content: space-between;
 }
 
 .catalogue__product img {
@@ -458,5 +458,19 @@ a {
 @media (max-width: 768px) {
   .footer {
     grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .footer__section p {
+    max-width: 100%;
+  }
+
+  .footer__links {
+    gap: 1.1rem;
+  }
+
+  .footer__heading,
+  .footer__links a {
+    font-size: 2rem;
   }
 }
