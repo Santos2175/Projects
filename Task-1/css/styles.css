@@ -602,20 +602,20 @@ a {
 @media (max-width: 768px) {
   .footer {
     grid-template-columns: 1fr;
-    gap: 4rem;
+    gap: 5rem;
   }
 
   .footer__section p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     max-width: 100%;
   }
 
   .footer__links {
-    gap: 1.1rem;
+    gap: 1.2rem;
   }
 
   .footer__heading,
   .footer__links a {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 }
