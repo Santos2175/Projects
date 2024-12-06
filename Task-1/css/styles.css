@@ -279,3 +279,44 @@ a {
   right: 0;
   top: 2.2rem;
 }
+
+/* App description */
+.app {
+  padding: 3rem 5rem;
+  margin: 3rem 0;
+}
+
+.app__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.app__download {
+  padding-top: 12rem;
+  padding-left: 5rem;
+  max-width: 480px;
+}
+
+.download__title {
+  font-size: 4.2rem;
+  line-height: 6rem;
+}
+
+.download__offer {
+  margin: 3rem 0;
+  font-size: 2rem;
+  color: #7c7c7c;
+}
+
+.app__design img {
+  height: 550px;
+  padding-right: 5rem;
+}
+
+.app__links {
+  max-width: 500px;
+}
+
+.app__links img {
+  width: 180px;
+}
