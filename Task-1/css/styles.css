@@ -52,13 +52,13 @@ a {
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1740px;
   margin: 0 auto;
 }
 
 /* navbar */
 .navbar {
-  padding: 2rem 5rem;
+  padding: 3rem 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,38 +106,42 @@ a {
 
 /* hero section */
 .hero {
-  padding: 0 5rem;
-  margin: 0 auto;
-}
-
-.hero__container {
+  margin: 0 5rem;
   display: flex;
+
   background-color: var(--color-hero);
   border-radius: 5.9rem;
 }
 
 .hero__content {
-  padding: 6rem 6rem;
+  padding-left: 7%;
 }
 
 .hero__title {
-  font-size: 8rem;
-  line-height: 10rem;
-}
-.hero__title--style1 {
-  background-color: #ffffff;
-  display: inline-block;
-  width: 80%;
-  padding: 0.8rem 0;
-  transform: rotate(-2deg);
+  padding-top: 7rem;
+  font-size: 7rem;
+  line-height: 9rem;
 }
 
-.hero__title--style2 {
-  background-color: var(--color-primary);
-  display: inline-block;
-  width: 80%;
-  padding: 0.8rem 0.2rem;
+.hero__title-background1,
+.hero__title-background2 {
   transform: rotate(-2deg);
+  padding: 0 2rem;
+}
+
+.hero__title-background1 {
+  background-color: #ffffff;
+  width: 70%;
+}
+
+.hero__title-background2 {
+  background-color: var(--color-primary);
+  width: 75%;
+}
+
+.hero__title-style {
+  display: inline-block;
+  transform: rotate(2deg);
 }
 
 .hero__subtitle {
@@ -147,29 +151,39 @@ a {
 }
 
 .hero__image {
-  width: 700px;
+  margin-right: 4rem;
+  width: 52%;
   height: auto;
   object-fit: contain;
 }
 
-@media (max-width: 768px) {
+.hero__btn {
+  margin-top: 1rem;
+  padding: 1.5rem 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__content {
+    width: 50%;
+  }
   .hero__title {
-    font-size: 4rem;
-    line-height: 5rem;
+    padding-top: 3.5rem;
+    font-size: 3rem;
+    line-height: 4rem;
   }
 
   .hero__subtitle {
-    font-size: 1.7rem;
-    padding: 1rem 0;
+    display: none;
   }
 
   .hero__btn {
+    margin-top: 3rem;
     font-size: 1.5rem;
+    padding: 1.5rem 2.5rem;
   }
 
   .hero__image {
-    width: 380px;
-    height: auto;
+    margin-right: 0;
   }
 }
 
