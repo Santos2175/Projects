@@ -464,17 +464,14 @@ a {
 
 /* App description */
 .app {
-  padding: 3rem 5rem;
-  margin: 3rem 0;
-}
-
-.app__container {
+  padding: 0 20rem;
   display: flex;
   justify-content: space-between;
+  margin: 7rem 0;
 }
 
 .app__download {
-  padding-top: 12rem;
+  margin-top: 22rem;
   padding-left: 5rem;
   max-width: 480px;
 }
@@ -485,27 +482,59 @@ a {
 }
 
 .download__offer {
-  margin: 3rem 0;
-  font-size: 2rem;
+  margin: 4rem 0;
+  font-size: 1.8rem;
   color: #7c7c7c;
 }
 
-.app__design img {
-  height: 550px;
-  padding-right: 5rem;
+.app img {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
 }
-
 .app__links {
-  max-width: 500px;
+  display: flex;
+  gap: 1.8rem;
 }
 
 .app__links img {
-  width: 180px;
+  width: 165px;
 }
 
-@media (max-width: 376px) {
+@media screen and (max-width: 768px) {
+  .app {
+    padding: 0 10rem;
+    margin: 3rem 0;
+  }
+
+  .app__download {
+    margin-top: 14rem;
+    padding-left: 0;
+    width: 220px;
+  }
+
+  .download__title {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .download__offer {
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+  }
+
+  .app__links {
+    gap: 1.5rem;
+  }
+
+  .app__links img {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 376px) {
   .app__design {
-    display: none;
+    display: none !important;
   }
 
   .app__download {
