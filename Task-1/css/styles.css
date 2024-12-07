@@ -189,31 +189,32 @@ a {
 
 /* brand section */
 .brand {
-  margin: 2rem 0;
-  padding: 3rem 5rem;
+  margin: 5rem 0;
 
   background-color: var(--color-primary);
 }
 
 .brand__logos {
+  padding: 4rem 14rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .brand__logo {
-  height: 35px;
+  height: 38px;
 }
 
 @media (max-width: 768px) {
   .brand__logos {
+    padding: 3rem 2rem;
+    gap: 6rem;
     overflow-x: scroll;
-    gap: 5rem;
     scrollbar-width: none;
   }
 
   .brand__logo {
-    height: 25px;
+    height: 40px;
   }
 }
 
