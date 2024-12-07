@@ -683,12 +683,16 @@ a {
 
 /* Footer Section */
 .footer {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 20px;
+  display: flex;
   background-color: var(--color-black);
   color: #fff;
-  padding: 8rem 3rem;
+  padding: 8rem 4rem;
+}
+
+.footer__imp-link {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__section {
@@ -697,38 +701,40 @@ a {
   font-weight: 400;
   flex-direction: column;
   gap: 1.8rem;
-  padding-left: 3rem;
 }
 
-.footer__section h3 {
+.footer__social-apps {
+  width: 45%;
+}
+
+.footer__social-apps h3 {
   font-family: 'Poppins', serif;
   font-size: 3rem;
 }
 
-.footer__section p {
-  font-size: 2.2rem;
-
-  max-width: 350px;
+.footer__social-apps p {
+  font-size: 1.8rem;
+  margin: 2rem 0;
+  padding-bottom: 1rem;
   line-height: 2.6rem;
-  margin: 1rem 0;
   color: #8e8e8e;
 }
 
 .footer__heading {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 100;
-  margin: 0;
+
   color: #d9d9d9;
 }
 
 .footer__links {
   display: flex;
   flex-direction: column;
-  gap: 1.8rem;
+  gap: 1.2rem;
 }
 .footer__links a {
   font-family: 'Poppins', serif;
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #8e8e8e;
 }
 
@@ -748,44 +754,67 @@ a {
   align-items: center;
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .footer {
-    grid-template-columns: 1fr;
-    gap: 4rem;
+    padding: 4rem 2rem;
+    flex-direction: column;
   }
 
-  .footer__section p {
+  .footer__social-apps {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .footer__social-apps p {
+    font-size: 1.8rem;
+    width: 100%;
+    margin: 1.6rem 0;
+  }
+
+  .footer__links {
+    gap: 1rem;
+  }
+
+  .footer__heading,
+  .footer__links a {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .footer {
+    padding: 3.2rem 1.6rem;
+  }
+
+  .footer__social-apps {
+    margin-bottom: 5.2rem;
+  }
+  .footer__social-apps h3 {
+    font-size: 2.4rem;
+  }
+
+  .footer__social-apps p {
     font-size: 1.4rem;
-    max-width: 100%;
+  }
+
+  .footer__imp-link {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  .footer__section {
+    padding-left: 0;
   }
 
   .footer__links {
     gap: 1.1rem;
   }
 
-  .footer__heading,
+  .footer__heading {
+    font-size: 1.6rem;
+  }
+
   .footer__links a {
     font-size: 1.4rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer {
-    grid-template-columns: 1fr;
-    gap: 5rem;
-  }
-
-  .footer__section p {
-    font-size: 1.8rem;
-    max-width: 100%;
-  }
-
-  .footer__links {
-    gap: 1.2rem;
-  }
-
-  .footer__heading,
-  .footer__links a {
-    font-size: 1.8rem;
   }
 }
