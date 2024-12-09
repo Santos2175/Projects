@@ -55,7 +55,6 @@ a {
 .container {
   max-width: 1740px;
   margin: 0 auto;
-  height: 100vh;
 }
 
 .no-scroll {
@@ -139,7 +138,7 @@ a {
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 431px) {
   .navbar__links {
     gap: 3rem;
   }
@@ -147,7 +146,11 @@ a {
 
 /* hero section */
 .hero {
-  margin: 0 7rem;
+  margin: 0 auto;
+  padding: 0 7rem;
+}
+
+.hero__container {
   display: flex;
 
   background-color: var(--color-hero);
@@ -239,7 +242,7 @@ a {
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 431px) {
   .hero {
     border-radius: 2.4rem;
   }
@@ -300,7 +303,7 @@ a {
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 431px) {
   .brand__logos {
     padding: 1.6rem;
     gap: 1.6rem;
@@ -354,12 +357,12 @@ a {
 
 @media screen and (max-width: 768px) {
   .catalogue {
-    padding: 0rem;
+    padding: 0;
   }
 
   .catalogue__products,
   .catalogue__title {
-    padding-left: 2rem;
+    padding: 0 2rem;
   }
   .catalogue__products {
     gap: 2rem;
@@ -390,7 +393,7 @@ a {
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 431px) {
   .catalogue__title {
     font-size: 2.4rem;
     margin-bottom: 2.4rem;
@@ -442,9 +445,10 @@ a {
 .information__highlight-background {
   background-color: #ffffff;
   position: relative;
+  left: -2rem;
   width: 85%;
   transform: rotate(-2deg);
-  padding-left: 0 -2rem;
+  padding: 0 1rem;
 }
 
 .information__highlight {
@@ -479,6 +483,9 @@ a {
     padding: 0 2rem;
   }
   .information__highlight-background {
+    position: relative;
+    left: -1rem;
+    padding: 0 1rem;
     width: 70%;
   }
 
@@ -499,7 +506,7 @@ a {
   }
 
   .information__btn {
-    margin-top: 1rem;
+    margin: 1rem 0;
     text-transform: none;
     font-size: 2.5rem;
     padding: 2rem;
@@ -507,7 +514,7 @@ a {
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 431px) {
   .information__title {
     padding-top: 4rem;
     font-size: 2rem;
@@ -600,7 +607,7 @@ a {
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 431px) {
   .favourite__title {
     font-size: 2.4rem;
     margin-bottom: 2.4rem;
@@ -621,7 +628,8 @@ a {
   padding: 0 20rem;
   display: flex;
   justify-content: space-between;
-  margin: 7rem 0;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
 }
 
 .app__download {
@@ -686,7 +694,7 @@ a {
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 431px) {
   .app {
     padding: 0;
     margin: 5.6rem auto;
@@ -804,7 +812,7 @@ a {
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 431px) {
   .promo {
     padding: 4rem 1rem;
   }
@@ -938,7 +946,7 @@ a {
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 431px) {
   .footer {
     padding: 3.2rem 1.6rem;
   }
