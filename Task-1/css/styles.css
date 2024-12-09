@@ -53,7 +53,7 @@ a {
 }
 
 .container {
-  max-width: 2100px;
+  max-width: 2000px;
   margin: 0 auto;
 }
 
@@ -348,7 +348,7 @@ a {
 
 /* catalogue Section */
 .catalogue {
-  padding: 0 7rem;
+  padding-left: 7rem;
 }
 
 .catalogue__title {
@@ -359,11 +359,13 @@ a {
 
 .catalogue__products {
   display: flex;
-  justify-content: space-between;
+  gap: 75px;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
 
 .catalogue__product img {
-  height: 600px;
+  height: 820px;
 }
 
 .product__title {
@@ -388,17 +390,36 @@ a {
   margin-top: 2.5rem;
 }
 
-@media screen and (max-width: 1280px) {
+@media (max-width: 1440px) {
+  .catalogue__products {
+    gap: 60px;
+  }
+  .catalogue__product img {
+    height: 560px;
+  }
+
+  .catalogue__description img {
+    width: 25px;
+    height: 25px;
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1026px) {
   .catalogue {
-    padding: 0 3rem;
+    padding-left: 3rem;
   }
   .catalogue__title {
     font-size: 3.5rem;
     line-height: 4.5rem;
     margin-bottom: 6rem;
   }
+
+  .catalogue__products {
+    gap: 35px;
+  }
   .catalogue__product img {
-    height: 440px;
+    height: 428px;
   }
 
   .catalogue__description img {
@@ -440,8 +461,6 @@ a {
   }
   .catalogue__products {
     gap: 2rem;
-    overflow-x: scroll;
-    scrollbar-width: none;
   }
 
   .catalogue__product img {
@@ -494,13 +513,18 @@ a {
 /* Information Section */
 .information {
   background: var(--color-primary);
-  padding: 0 15rem;
-  display: flex;
   margin: 8rem 0;
 }
 
+.information__container {
+  padding: 0 15rem;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
 .information img {
-  width: 50%;
+  width: 570px;
   height: auto;
   object-fit: contain;
   padding-top: 5rem;
@@ -577,29 +601,40 @@ a {
     padding: 1.8rem 2.8rem;
     font-weight: 500;
   }
+
+  .information img {
+    width: 400px;
+  }
 }
 
-@media screen and (max-width: 821px) {
+@media screen and (max-width: 850px) {
   .information {
     padding: 0 2rem;
+  }
+  .information__container {
+    padding: 0 10rem;
+  }
+
+  .information__portion {
+    padding-left: 0;
   }
   .information__highlight-background {
     position: relative;
     left: -1rem;
     padding: 0 1rem;
-    width: 70%;
+    width: 85%;
   }
 
   .information__title {
     padding-top: 5rem;
-    font-size: 4.5rem;
-    line-height: 6rem;
+    font-size: 2.5rem;
+    line-height: 4rem;
   }
 
   .information__description,
   .information__date,
   .information__conditions {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 
   .information__description {
@@ -609,12 +644,25 @@ a {
   .information__btn {
     margin: 1rem 0;
     text-transform: none;
-    font-size: 2.5rem;
-    padding: 2rem;
+    font-size: 2rem;
+    padding: 1.6rem;
     border-radius: 2rem;
+  }
+
+  .information img {
+    width: 290px;
+    height: auto;
+    object-fit: contain;
+    padding-top: 5rem;
   }
 }
 @media screen and (max-width: 541px) {
+  .information {
+    padding: 0 5rem;
+  }
+  .information__container {
+    padding: 0;
+  }
   .information__portion {
     padding: 0;
   }
@@ -641,6 +689,9 @@ a {
 }
 
 @media screen and (max-width: 431px) {
+  .information__container {
+    padding: 0;
+  }
   .information__title {
     padding-top: 4rem;
     font-size: 2rem;
@@ -667,13 +718,13 @@ a {
   }
 
   .information img {
-    width: 55%;
+    width: 180px;
   }
 }
 
 /* Favourite Section */
 .favourite {
-  padding: 2rem 5rem;
+  padding-left: 5rem;
 }
 
 .favourite__title {
@@ -685,11 +736,13 @@ a {
 
 .favourite__products {
   display: flex;
-  justify-content: space-between;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  gap: 69px;
 }
 
 .favourite__product img {
-  height: 450px;
+  height: 630px;
 }
 
 .favourite__description {
@@ -703,9 +756,28 @@ a {
   margin-top: 2.5rem;
 }
 
-@media screen and (max-width: 1280px) {
+@media (max-width: 1440px) {
   .favourite {
-    padding: 2rem 3rem;
+    padding-right: 0;
+    padding-left: 5rem;
+  }
+  .favourite__products {
+    gap: 60px;
+  }
+  .favourite__product img {
+    height: 440px;
+  }
+
+  .favourite__description img {
+    width: 25px;
+    height: 25px;
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1026px) {
+  .favourite {
+    padding-left: 3rem;
   }
   .favourite__title {
     font-size: 3.5rem;
@@ -713,8 +785,7 @@ a {
     margin-bottom: 6rem;
   }
   .favourite__products {
-    display: flex;
-    justify-content: space-between;
+    gap: 40px;
   }
   .favourite__product img {
     height: 318px;
@@ -743,8 +814,6 @@ a {
   }
   .favourite__products {
     gap: 2.5rem;
-    overflow-x: scroll;
-    scrollbar-width: none;
   }
 
   .favourite__title {
