@@ -102,7 +102,7 @@ a {
   }
 }
 
-@media screen and (max-width: 821px) {
+@media screen and (max-width: 888px) {
   .navbar {
     position: fixed;
     width: 100%;
@@ -872,7 +872,8 @@ a {
     padding: 0;
   }
   .information__container {
-    padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
   }
   .information__title {
     padding-top: 4rem;
@@ -892,6 +893,10 @@ a {
   .information__conditions {
     font-size: 0.8rem;
     line-height: 1.1rem;
+  }
+
+  .information__description {
+    width: 180px;
   }
 
   .information__btn {
