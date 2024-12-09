@@ -166,6 +166,9 @@ a {
 
 .hero__title-background1,
 .hero__title-background2 {
+  position: relative;
+  left: -1rem;
+  padding: 0 1rem;
   transform: rotate(-2deg);
 }
 
@@ -216,6 +219,11 @@ a {
     line-height: 4rem;
   }
 
+  .hero__title-background1,
+  .hero__title-background2 {
+    width: 55%;
+  }
+
   .hero__subtitle {
     display: none;
   }
@@ -238,6 +246,11 @@ a {
   .hero__content {
     margin-left: 1.2rem;
     width: 55%;
+  }
+
+  .hero__title-background1,
+  .hero__title-background2 {
+    width: 75%;
   }
   .hero__title {
     font-size: 2rem;
@@ -428,6 +441,7 @@ a {
 
 .information__highlight-background {
   background-color: #ffffff;
+  position: relative;
   width: 85%;
   transform: rotate(-2deg);
   padding-left: 0 -2rem;
